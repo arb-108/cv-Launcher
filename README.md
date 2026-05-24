@@ -6,3 +6,6 @@ sqlcmd -S .\SQLEXPRESS -E -Q "ALTER DATABASE RestaurantPOS SET SINGLE_USER WITH 
 
 
 sqlcmd -S .\SQLEXPRESS -E -Q "SELECT name FROM sys.databases WHERE name='RestaurantPOS';"
+
+
+Get-WmiObject Win32_PnPEntity | Where-Object {$_.DeviceID -like "*USB00*"} | Select Name, DeviceID
