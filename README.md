@@ -9,3 +9,11 @@ sqlcmd -S .\SQLEXPRESS -E -Q "SELECT name FROM sys.databases WHERE name='Restaur
 
 
 Get-WmiObject Win32_PnPEntity | Where-Object {$_.DeviceID -like "*USB00*"} | Select Name, DeviceID
+
+{
+  "server": ".\\SQLEXPRESS",
+  "database": "RestaurantPOS",
+  "integratedSecurity": true,
+  "username": null,
+  "password": null
+}
