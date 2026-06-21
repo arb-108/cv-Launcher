@@ -53,3 +53,5 @@ type "%LOCALAPPDATA%\RestaurantPOS\dbconfig.json"
   "username": null,
   "password": null
 }
+
+https://drive.google.com/drive/folders/10nfQh11vFYDgwipUqAMHX7TvhNBdl_N1?usp=sharing
