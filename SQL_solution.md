@@ -69,3 +69,21 @@ mmc SQLServerManager16.msc
 explorer "%LOCALAPPDATA%\RestaurantPOS"
 type "%LOCALAPPDATA%\RestaurantPOS\dbconfig.json"
 ```
+## 8 - Cold start
+
+```
+sc config "MSSQL$SQLEXPRESS" start= auto
+sc config "SQLBrowser" start= auto
+sc start "SQLBrowser"
+```
+## 9 - Drive Link
+
+```
+https://drive.google.com/drive/folders/10nfQh11vFYDgwipUqAMHX7TvhNBdl_N1?usp=sharing
+```
+## 10 - Default Instance Setting
+```
+{ "server": ".\SQLEXPRESS", "database": "RestaurantPOS", "integratedSecurity": true, "username": null, "password": null }
+```
+
+
