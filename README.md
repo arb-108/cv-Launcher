@@ -55,3 +55,11 @@ type "%LOCALAPPDATA%\RestaurantPOS\dbconfig.json"
 }
 
 https://drive.google.com/drive/folders/10nfQh11vFYDgwipUqAMHX7TvhNBdl_N1?usp=sharing
+
+
+sc config "MSSQL$SQLEXPRESS" start= auto
+sc config "SQLBrowser" start= auto
+sc start "SQLBrowser"
+
+
+
